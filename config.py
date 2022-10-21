@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "1256720031:AAFQAKab63oRmRW0CAt4fZBo_VfXo7l0lBg")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5153781499:AAFaAK_Pz6bC-3Xpu3QbFVZFSQqAVsVhs4s")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "1669750"))
@@ -12,13 +12,13 @@ APP_ID = int(os.environ.get("APP_ID", "1669750"))
 API_HASH = os.environ.get("API_HASH", "0f53ee8c576281995d621194aec588d8")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001707762214"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001603443144)
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "831370530"))
+OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "postgres://abhyqmgp:xWR8ugCjF9fkgaMNtupG4d2uWskXuSzQ@satao.db.elephantsql.com/abhyqmgp")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://ionrbzxtguvnfd:83da471f41c86bac95417c1204aa5e1def1e360df295ec8fc7cc8cc78e7cad0b@ec2-54-80-123-146.compute-1.amazonaws.com:5432/d6ovdl7u0gr4ev")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
@@ -29,7 +29,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "").split()):
+    for x in (os.environ.get("ADMINS", "831370530 718979130").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -41,7 +41,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
 if os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True':
