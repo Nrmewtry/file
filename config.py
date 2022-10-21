@@ -12,10 +12,10 @@ APP_ID = int(os.environ.get("APP_ID", "1669750"))
 API_HASH = os.environ.get("API_HASH", "0f53ee8c576281995d621194aec588d8")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001603443144)
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001603443144")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+OWNER_ID = int(os.environ.get("OWNER_ID", "831370530"))
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "postgres://ionrbzxtguvnfd:83da471f41c86bac95417c1204aa5e1def1e360df295ec8fc7cc8cc78e7cad0b@ec2-54-80-123-146.compute-1.amazonaws.com:5432/d6ovdl7u0gr4ev")
